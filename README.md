@@ -1,6 +1,9 @@
 # Lin
 Xcode4 plugin showing completion for NSLocalizedString and localizedStringForKey:value:table:
 
+### support macro（by maojj）
+  add completion for my custom macro: UI_STRING
+  #define UI_STRING(key)          NSLocalizedString(key, nil)
 
 ## Installation
 Build the Lin, then the plugin will automatically be installed in `~/Library/Application Support/Developer/Shared/Xcode/Plug-ins`.  

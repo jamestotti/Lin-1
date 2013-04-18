@@ -49,10 +49,10 @@
 
 static Lin *sharedPlugin = nil;
 static NSString *kLinUserDefaultsEnableKey = @"LINEnabled";
-static NSString *regexs[] = { @"NSLocalizedString\\s*\\(\\s*@\"(.*)\"\\s*,\\s*(@\".*\"|nil)\\s*\\)", @"localizedStringForKey:\\s*@\"(.*)\"\\s*value:\\s*@\"(.*)\"\\s*table:\\s*@\"(.*)\"" };
-static NSUInteger numberOfRanges[] = { 3, 4 };
-static NSUInteger entityRangeInLineIndices[] = { 0, 0 };
-static NSUInteger keyRangeInLineIndices[] = { 1, 1 };
+static NSString *regexs[] = { @"NSLocalizedString\\s*\\(\\s*@\"(.*)\"\\s*,\\s*(@\".*\"|nil)\\s*\\)", @"localizedStringForKey:\\s*@\"(.*)\"\\s*value:\\s*@\"(.*)\"\\s*table:\\s*@\"(.*)\"",@"UI_STRING\\(@\"(.*)\"\\)"};
+static NSUInteger numberOfRanges[] = { 3, 4, 2 };
+static NSUInteger entityRangeInLineIndices[] = { 0, 0, 0 };
+static NSUInteger keyRangeInLineIndices[] = { 1, 1, 1 };
 
 + (instancetype)sharedPlugin
 {
