@@ -3,6 +3,7 @@ Xcode4 plugin showing completion for NSLocalizedString and localizedStringForKey
 
 ### support macro（by maojj）
   add completion for my custom macro: UI_STRING
+
   #define UI_STRING(key)          NSLocalizedString(key, nil)
 
 ## Installation
